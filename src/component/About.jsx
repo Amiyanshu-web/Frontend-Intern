@@ -5,7 +5,7 @@ import image1 from "../image1.png";
 import image2 from "../image2.png";
 const About = () => {
     return (
-        <Card style={{ margin: "10px" }}>
+        <Card style={{ margin: "10px", border: "none" }}>
             <Card.Body>
                 <Card.Title><h4>About Bitcoin</h4></Card.Title>
                 <Card.Subtitle className="mb-2 mt-3"><b>What is Bitcoin?</b></Card.Subtitle>
@@ -36,8 +36,8 @@ const About = () => {
                 <Card.Title><h4>Already Holding Bitcoin?</h4></Card.Title>
                 <Card.Text>
                     <Row>
-                        <Col xs={12} md = {6}><img src={image1} style={{ width: "90%", height: "80%" }}></img></Col>
-                        <Col xs={12} md = {6}><img src={image2} style={{ width: "90%", height: "80%" }}></img></Col>
+                        <Col xs={12} md={6}><img src={image1} style={{ width: "90%", height: "80%" }}></img></Col>
+                        <Col xs={12} md={6}><img src={image2} style={{ width: "90%", height: "80%" }}></img></Col>
                     </Row>
                     <p>Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing
                         semper scelerisque porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames

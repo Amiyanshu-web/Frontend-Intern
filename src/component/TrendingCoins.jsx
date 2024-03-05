@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 const TrendingCoins = () => {
     return (
-        <Card style={{ marginTop:"10px"}}>
+        <Card style={{ marginTop:"10px", border:"none"}}>
             <Card.Header style={{ border: 'none' }}><h4>Trending Coins (24h)</h4></Card.Header>
             <ListGroup variant="flush">
                 <ListGroup.Item style={{ border: 'none' }}>

@@ -1,16 +1,18 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Card from 'react-bootstrap/Card';
 import { Row, Col, Container } from "react-bootstrap";
-// import { Chart as ChartJS, Doughnut } from 'chart.js/auto'
-import Chart from 'chart.js/auto'
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const data = {
     labels: ['Crowdsale Investors', 'Foundation'],
     datasets: [
         {
-            label: 'My First Dataset',
+            label: '',
             data: [80, 20],
-            backgroundColor: ['#3b82f6', '#e9ecef'], // Blue and orange colors
+            backgroundColor: ['blue', 'orange'], // Blue and orange colors
             hoverBackgroundColor: ['#377bff', '#e2e7ef'], // Slightly darker shades for hover effect
             borderColor: '#fff', // White border around each segment
             borderWidth: 1, // 1px border width
@@ -18,17 +20,31 @@ const data = {
     ],
 };
 
+const chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+};
+
 const Tokenomics = () => {
-    const chartContainer = useRef(null);
-
-
     return (
         <>
-            <Card style={{ margin: "10px" }}>
+            <Card style={{ margin: "10px", border:"none"}}>
                 <Card.Body>
                     <Card.Title><h4>Tokenomics</h4></Card.Title>
                     <Card.Subtitle className="mb-2 mt-3"><b>Initial Distribution</b></Card.Subtitle>
-                    <canvas ref={chartContainer} />
+                    <Row>
+                        <Col md={6} className="d-flex align-items-center">
+                            <Doughnut data={data} options={chartOptions} width={200} height={200} />
+                        </Col>
+                        <Col md={6} className="d-flex align-items-center">
+                            <div className="text-right">
+                                <ul className="list-unstyled">
+                                    <li>🔵 Crowdsale Investors: 80%</li>
+                                    <li>🟠 Foundation: 20%</li>
+                                </ul>
+                            </div>
+                        </Col>
+                    </Row>
                     <Card.Text>
                         Lorem ipsum dolor sit amet consectetur. Cras aliquet tristique ornare vestibulum nunc dignissim vel
                         consequat. Leo etiam nascetur bibendum amet enim sit eget leo amet. At metus orci augue fusce eleifend

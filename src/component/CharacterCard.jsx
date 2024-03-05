@@ -8,15 +8,7 @@ function CharacterCard() {
     const text = 'Card text content.';
 
     return (
-        //     <Card style={{ width: '18rem' }}>
-        //         {/* <Img variant="top" src={imageUrl} alt="Card image" /> */}
-        //         <CardBody>
-        //             <CardTitle>{title}</CardTitle>
-        //             <CardText>{text}</CardText>
-        //             <Button variant="primary">Go somewhere</Button>
-        //         </CardBody>
-        //     </Card>
-        <Card style={{ margin: "10px" }}>
+        <Card style={{ margin: "10px", border:"none"}}>
             <Card.Body>
                 <Card.Title>
                     <span role="img" aria-label="bitcoin">
