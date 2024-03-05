@@ -46,3 +46,14 @@
   background: #EFF2F5;
   overflow-x: hidden;
 }
+
+.myimg {
+  width: 25vw;
+  margin-top: "10px";
+}
+
+@media(max-width:400px) {
+  .myimg {
+    width: 100vw;
+  }
+}

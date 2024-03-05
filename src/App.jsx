@@ -28,7 +28,7 @@ function App() {
           <Team />
         </Col>
         <Col xs={12} md={3}>
-          <img src={getStarted} alt="" style={{ width: "25vw", marginTop: "10px" }}></img>
+          <img src={getStarted} alt="" className = "myimg" ></img>
           <TrendingCoins />
         </Col>
       </Row>
