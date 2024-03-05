@@ -3,10 +3,13 @@ import { Carousel } from 'react-bootstrap';
 import { Row, Col, Container } from "react-bootstrap";
 import icon1 from "../icon1.png";
 import icon2 from "../icon2.png";
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 
 const EventsCarousel = () => {
     return (
-        <Carousel>
+        <Carousel
+            prevIcon={<BsChevronLeft style={{ color: 'black' }} />}
+            nextIcon={<BsChevronRight style={{ color: 'black' }} />}>
             <Carousel.Item >
                 <div className="message-card blue" style={{ backgroundColor: '#e8f4fd', padding: "10px", borderRadius: "10px", marginBottom: "5px" }}>
                     <Row>

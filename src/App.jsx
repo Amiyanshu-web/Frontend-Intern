@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import ResponsiveNavbar from './component/ResponsiveNavbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CharacterCard from './component/CharacterCard'
+import CharacterCard from './pages/CharacterCard'
 import { Row, Col, Container } from "react-bootstrap";
 import getStarted from "./getStarted.png";
 import TrendingCoins from './component/TrendingCoins';
-import About from './component/About';
-import Tokenomics from './component/Tokenomics';
-import Team from './component/Team';
-import Sentiment from './component/Sentiment';
-import { Performance } from './component/Performance';
+import About from './pages/About';
+import Tokenomics from './pages/Tokenomics';
+import Team from './pages/Team';
+import Sentiment from './pages/Sentiment';
+import { Performance } from './pages/Performance';
 import './App.css';
+import MayLike from './pages/MayLike';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -31,6 +32,7 @@ function App() {
           <TrendingCoins />
         </Col>
       </Row>
+      <MayLike />
     </>
   )
 }

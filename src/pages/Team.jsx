@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import MyCard from './MyCard';
+import MyCard from '../component/MyCard';
 
 const Team = () => {
   const aboutText = `Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id.
@@ -10,7 +10,7 @@ const Team = () => {
           interdu`;
   return (
     <>
-      <Card style={{ margin: "10px", border:"none" }}>
+      <Card style={{ margin: "10px", border: "none" }}>
         <Card.Body>
           <Card.Title><h4>Team</h4></Card.Title>
           <Card.Text>

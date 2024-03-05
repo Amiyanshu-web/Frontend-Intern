@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import Card from 'react-bootstrap/Card';
-import EventsCarousel from './EventsCarousel';
+import EventsCarousel from '../component/EventsCarousel';
 import stock from '../stock.png';
 
 const Sentiment = () => {
 
     return (
-        <Card style={{ margin: "10px", border:"none" }}>
+        <Card style={{ margin: "10px", border: "none" }}>
             <Card.Body>
                 <Card.Title><h4>Sentiments</h4></Card.Title>
                 <Card.Subtitle className="mb-3 mt-3 text-muted"><h5>Key Events <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
