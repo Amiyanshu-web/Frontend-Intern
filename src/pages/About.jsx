@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { Row, Col, Container } from "react-bootstrap";
-import image1 from "../image1.png";
-import image2 from "../image2.png";
+import { Row, Col } from "react-bootstrap";
+import image1 from "../image/image1.png";
+import image2 from "../image/image2.png";
 const About = () => {
     return (
         <Card style={{ margin: "10px", border: "none" }}>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Card from 'react-bootstrap/Card';
 import EventsCarousel from '../component/EventsCarousel';
-import stock from '../stock.png';
+import stock from '../image/stock.png';
 
 const Sentiment = () => {
 

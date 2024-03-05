@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Row, Col, Container } from "react-bootstrap";
-import icon1 from "../icon1.png";
-import icon2 from "../icon2.png";
+import icon1 from "../image/icon1.png";
+import icon2 from "../image/icon2.png";
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 
 const EventsCarousel = () => {

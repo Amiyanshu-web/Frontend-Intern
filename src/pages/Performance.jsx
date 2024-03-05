@@ -1,8 +1,8 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap'
-import performance1 from '../performance1.png'
-import performance2 from '../performance2.png'
+import performance1 from '../image/performance1.png'
+import performance2 from '../image/performance2.png'
 export const Performance = () => {
     return (
         <Card style={{ margin: "10px", border:"none"}}>

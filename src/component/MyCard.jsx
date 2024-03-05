@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { Row, Col, Container } from "react-bootstrap";
+    import { Row, Col } from "react-bootstrap";
 
 const MyCard = ({ image, name, designation, about }) => (
     <Card style={{ backgroundColor: '#e8f4fd', border: "none", marginBottom: "10px" }}>

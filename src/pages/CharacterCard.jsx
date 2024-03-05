@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, CardBody, CardTitle, CardText, Button, Badge } from 'react-bootstrap';
+import { Card, Badge } from 'react-bootstrap';
 import TradingViewWidget from '../component/TradingViewWidget';
 import axios from 'axios';
 

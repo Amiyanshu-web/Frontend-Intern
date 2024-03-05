@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React from 'react'
 import Card from 'react-bootstrap/Card';
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 

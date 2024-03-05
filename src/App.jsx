@@ -3,7 +3,7 @@ import ResponsiveNavbar from './component/ResponsiveNavbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CharacterCard from './pages/CharacterCard'
 import { Row, Col, Container } from "react-bootstrap";
-import getStarted from "./getStarted.png";
+import getStarted from "./image/getStarted.png";
 import TrendingCoins from './component/TrendingCoins';
 import About from './pages/About';
 import Tokenomics from './pages/Tokenomics';
@@ -13,7 +13,6 @@ import { Performance } from './pages/Performance';
 import './App.css';
 import MayLike from './pages/MayLike';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
